@@ -1,0 +1,312 @@
+/*
+font-family: 'Aleo', serif;
+font-family: 'Gabarito', cursive;
+font-family: 'Lato', sans-serif;
+*/
+
+:root{
+  --green: #13af42;
+  --dark-gray: #222222;
+  --mid-gray: #999999;
+  --light-gray: #bababa;
+}
+
+body {
+  background-color: #151515;
+  position: relative;
+}
+
+body::-webkit-scrollbar {
+  width: 15px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--dark-gray);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--green);    /* color of the scroll thumb */
+  border-radius: 15px;       /* roundness of the scroll thumb */
+  border: 3px solid var(--dark-gray);  /* creates padding around scroll thumb */
+}
+
+textarea::-webkit-scrollbar {
+  width: 10px;               /* width of the entire scrollbar */
+}
+
+textarea::-webkit-scrollbar-track {
+  background: var(--dark-gray);        /* color of the tracking area */
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: var(--green);    /* color of the scroll thumb */
+  border-radius: 15px;       /* roundness of the scroll thumb */
+  border: 3px solid var(--dark-gray);  /* creates padding around scroll thumb */
+}
+
+body::before {
+  content: '';
+  background-image: url("../assets/fundo-de-textura-papar-aquarela-branco-vertical-para-design-de-cartao-de-capa-ou-fundo-de-arte-de-pintura-aon-de-sobreposicao.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  mix-blend-mode: multiply;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 100%;
+} 
+
+
+h1{
+  font-family: 'Aleo', serif;
+  font-weight: 900;
+  font-size: 6em;
+  color: var(--green);
+}
+
+h2 {
+  font-family: 'Gabarito', sans-serif;
+  font-weight: 300;
+  font-size: 2em;
+  color: var(--mid-gray);
+}
+
+h3, legend {
+  font-family: 'Gabarito', sans-serif;
+  font-size: 2em;
+  font-weight: 600;
+  color: var(--light-gray);
+  margin: 20px 0px 0px 0px;
+  display: inline;
+}
+
+h4{
+  font-family: 'aleo', serif;
+  font-size: 7em;
+  font-weight: 900;
+  color: var(--dark-gray);
+}
+
+p {
+  font-family: 'Gabarito', sans-serif;
+  font-weight: 100;
+  font-size: 1.5em;
+  color: var(--light-gray);
+  line-height: 1.5em ;
+  margin-top: 10px;
+}
+
+a {
+  text-decoration: none;
+  position: relative;
+}
+
+#contato i{
+  display: inline-block;
+  font-size: 2em;
+  margin-right: 10px;
+  color: var(--light-gray);
+
+}
+
+#colunas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.col-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.col-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.col-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+  flex: 1;
+}
+
+.col-1, .col-2, .col-3 {
+  margin: 10px;
+  padding: 20px
+}
+
+.img {
+  margin: auto;
+  width: 100%;
+  border-radius: 30px;
+}
+
+#about-me, #interesses, #formacao, #hard-skills, #contato {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.nome {
+  margin-bottom: 50px;
+}
+
+#about-me h2, #interesses h2, #formacao h2, #hard-skills h2{
+  color: var(--light-gray);
+  margin-top: -25px;
+  font-size: 3em;
+  font-weight: 900;
+  margin-bottom: 10px;
+  display: inline;
+}
+
+#about-me p{
+  display: inline-block;
+  margin-left: 5px;
+  line-height: 1.5em ;
+  margin-top: 10px;
+}
+
+.conteudo {
+  margin-top: -40px;
+}
+
+
+#formacao {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.item-formacao {
+  margin-top: 30px;
+}
+
+.item-formacao p{
+  margin-top: 5px;
+}
+
+.campos-interesses {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.icons-interesses {
+  text-align: center;
+  margin: 20px 40px 20px 0px;
+}
+
+.icons-interesses i {
+  font-size: 3em;
+  color: var(--green);
+}
+
+.img-hard-skills {
+  width: 60px;
+  margin-left: 0px;
+  filter: grayscale(100%);
+  position: relative;
+}
+
+.img-hard-skills:hover {
+  width: 60px;
+  margin-left: 0px;
+  filter: grayscale(0%);
+  transition: 200ms;
+}
+
+.icons-hard-skills {
+  padding: 0px;
+  text-align: center;
+  margin: 0px 45px 20px 0px;
+}
+
+
+.row {
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: row;
+}
+
+a {
+  color: green !important;
+}
+
+.item-contato:hover{
+  font-size: 1.1em;
+  color: green;
+  transition: 200ms;
+}
+
+.item-contato {
+  margin-bottom: 30px;
+}
+
+input, textarea {
+  resize: none;
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  position: relative;
+
+  color: var(--light-gray);
+
+  background-color: #262626;
+  border-radius: 5px;
+  min-height: 20px;
+  padding: 10px;
+  font-family: 'Gabarito', sans-serif;
+  font-size: 1em;
+}
+
+input:focus, textarea:focus{
+  resize: none;
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+  border: 3px solid var(--green);
+}
+
+label {
+  margin: 60px 0px;
+}
+
+button {
+  font-family: 'Gabarito', sans-serif;
+  font-size: 1em;
+  color: var(--dark-gray);
+  background-color: var(--green);
+  padding: 10px 20px;
+  margin: 20px 0px;
+  border: 0px;
+  border-radius: 5px;
+  position: relative;
+}
+
+button:hover {
+  background-color: var(--light-gray);
+  transition: 200ms;
+  cursor: pointer;  
+}
+
+button:focus {
+  border: 3px solid var(--green);
+  outline: 0;
+  background-color: var(--light-gray);
+  transition: 200ms;
+}
