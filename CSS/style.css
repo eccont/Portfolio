@@ -16,6 +16,21 @@ body {
   position: relative;
 }
 
+/*body::before {
+  content: '';
+  background-image: url("../assets/fundo-de-textura-papar-aquarela-branco-vertical-para-design-de-cartao-de-capa-ou-fundo-de-arte-de-pintura-aon-de-sobreposicao.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  mix-blend-mode: multiply;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 100%;
+} */
+
 body::-webkit-scrollbar {
   width: 15px;               /* width of the entire scrollbar */
 }
@@ -28,6 +43,38 @@ body::-webkit-scrollbar-thumb {
   background-color: var(--green);    /* color of the scroll thumb */
   border-radius: 15px;       /* roundness of the scroll thumb */
   border: 3px solid var(--dark-gray);  /* creates padding around scroll thumb */
+}
+
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 3.7em !important;
+  }
+
+  #about-me, #interesses, #formacao, #hard-skills, #contato {
+    margin: 5px 0px 5px 0px !important;
+  }
+
+  .section-title 
+  {
+    font-size: 5.5em !important;
+    margin-bottom: 20px;
+  }
+
+  .row {
+    flex-wrap: wrap;
+  }
+
+  .campos-interesses {
+    flex-direction: row !important;
+    align-items: flex-start !important;
+  }
+
+  .icons-hard-skills, .icons-interesses {
+    margin-right: 13px !important;
+    margin-top: 0px !important;
+    
+  }
 }
 
 textarea::-webkit-scrollbar {
@@ -44,20 +91,6 @@ textarea::-webkit-scrollbar-thumb {
   border: 3px solid var(--dark-gray);  /* creates padding around scroll thumb */
 }
 
-body::before {
-  content: '';
-  background-image: url("../assets/fundo-de-textura-papar-aquarela-branco-vertical-para-design-de-cartao-de-capa-ou-fundo-de-arte-de-pintura-aon-de-sobreposicao.jpg");
-  background-repeat: repeat;
-  background-size: cover;
-  background-position: center;
-  position: absolute;
-  mix-blend-mode: multiply;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  opacity: 100%;
-} 
 
 
 h1{
@@ -83,7 +116,7 @@ h3, legend {
   display: inline;
 }
 
-h4{
+.section-title {
   font-family: 'aleo', serif;
   font-size: 7em;
   font-weight: 900;
@@ -173,16 +206,14 @@ a {
 }
 
 #about-me p{
-  display: inline-block;
   margin-left: 5px;
   line-height: 1.5em ;
   margin-top: 10px;
 }
 
 .conteudo {
-  margin-top: -40px;
+  margin-top: -70px;
 }
-
 
 #formacao {
   display: flex;
@@ -201,7 +232,7 @@ a {
 .campos-interesses {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
   margin-top: 30px;
@@ -234,8 +265,9 @@ a {
 .icons-hard-skills {
   padding: 0px;
   text-align: center;
-  margin: 0px 45px 20px 0px;
+  margin: 20px 30px 20px 0px;
 }
+
 
 
 .row {
@@ -286,6 +318,16 @@ label {
   margin: 60px 0px;
 }
 
+.campo-form {
+  width: 95%;
+  
+}
+
+#mensagem {
+  width: 95%;
+  height: 120px;
+}
+
 button {
   font-family: 'Gabarito', sans-serif;
   font-size: 1em;
@@ -309,4 +351,13 @@ button:focus {
   outline: 0;
   background-color: var(--light-gray);
   transition: 200ms;
+}
+
+
+#messageNome, #messageEmail, #messageRepeteEmail {
+  font-size: 1em;
+  color: red;
+  font-weight: 100;
+  display: none;
+  margin: 0px;
 }

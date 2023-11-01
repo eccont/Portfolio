@@ -32,14 +32,14 @@
         </h2>
       </div>
       <div id="about-me">
-        <h4>01</h4>
+        <p class="section-title">01</p>
         <div class="conteudo">
           <h2>Olá,</h2>
           <p>sou Erick Contrera. Diretor de Arte há 5 anos, Desenvolvedor e pai de pet. Atualmente estou vivendo um romance com UI e UX Design.</p>
         </div>
       </div>
       <div id="interesses">
-        <h4>02</h4>
+        <p class="section-title">02</p>
         <div class="conteudo">
           <h2>Interesses</h2>
           <div class="row">
@@ -94,7 +94,7 @@
         <img class="img" src="ASSETS/minha-carinha2.jpg" alt="Fotografia do Erick Contrera">
       </figure>
       <div id="formacao">
-        <h4>03</h4>
+        <p class="section-title">03</p>
         <div class="conteudo">
           <h2>Formação</h2>
           <div class="item-formacao">
@@ -114,7 +114,7 @@
     </section>
     <section class="col-3">
       <div id="hard-skills">
-        <h4>04</h4>
+        <p class="section-title">04</p>
         <div class="conteudo">
           <h2>Hard Skills</h2>
           <div class="row">
@@ -183,7 +183,7 @@
       </div>
 
       <div id="contato">
-        <h4>Contato</h4>
+        <p class="section-title">Contato</p>
         <div class="conteudo">
           <a href="#">
             <div class="item-contato">
@@ -199,19 +199,26 @@
               <p>erickc.contrera@gmail.com</p>
             </div>
           </a>
-          <form method="get" action="#">            
+          <form id="formulario" method="get" action="#">            
             <h3>Ou fale por aqui</h3>
             <p>Seu nome</p>
+            <p id="messageNome"></p>
             <label for="nome">                  
-              <input id="nome" type="text" size="50">
+              <input class="campo-form" id="nome" type="text">
             </label>
             <p>Seu melhor e-mail</p>
+            <p id="messageEmail"></p>
             <label for="e-mail">
-              <input id="e-mail" type="email" size="50">
+              <input class="campo-form" id="e-mail" type="email">
+            </label>
+            <p>Repita seu e-mail</p>
+            <p id="messageRepeteEmail"></p>
+            <label for="repete-e-mail">
+              <input class="campo-form" id="repete-e-mail" type="email">
             </label>
             <p>Fala aí! </p>
             <label for="mensagem">
-              <textarea id="mensagem" name="w3review" rows="5" cols="50"></textarea>
+              <textarea class="campo-form" id="mensagem" name="w3review"></textarea>
             </label>
             <div>
              <button type="submit">Enviar mensagem</button>
@@ -222,5 +229,6 @@
     </section>
   </main>
   
+  <script src="SCRIPT/valida.js"></script>
 </body>
 </html>
