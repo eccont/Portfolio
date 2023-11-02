@@ -12,12 +12,12 @@ button.addEventListener("click", () => {
   var img2 = "ASSETS/erick-light.webp";
 
   console.log(location.origin + img1);
-  console.log(changeImg.src)
+  console.log(changeImg.src);
 
-  if (changeImg.src === location.origin + img1) {
-    console.log("caiu aqui")
+  if (changeImg.src === location.origin + "/" + img1) {
+    console.log("caiu aqui");
     changeImg.setAttribute("src", img2);
-  } else if (changeImg.src === location.origin + img2) {
+  } else if (changeImg.src === location.origin + "/" + img2) {
     changeImg.setAttribute("src", img1);
   }
 });
