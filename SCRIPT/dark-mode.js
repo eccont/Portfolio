@@ -4,9 +4,14 @@ let changeImg = document.getElementById("mudar-foto");
 button.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
 
-  caminho = location.href.replace('index.html', 'ASSETS');
-  var img1 = caminho + "/Portfolio/minha-carinha2.jpg";
-  var img2 = caminho + "/Portfolio/erick-light.webp";  
+  caminho = location.href.replace('index.html', '');
+  var img1 = caminho + "ASSETS/minha-carinha2.jpg";
+  var img2 = caminho + "ASSETS/erick-light.webp";  
+
+  console.log(changeImg.src)
+  console.log(img1)
+  console.log(caminho)
+
 
   if (changeImg.src === img1) {
     changeImg.setAttribute("src", img2);
