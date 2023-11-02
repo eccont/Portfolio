@@ -11,7 +11,8 @@ button.addEventListener("click", () => {
   var img1 = "ASSETS/minha-carinha2.jpg";
   var img2 = "ASSETS/erick-light.webp";
 
-  console.log(img1);
+  console.log(location.origin + img1);
+  console.log(changeImg.src)
 
   if (changeImg.src === location.origin + img1) {
     console.log("caiu aqui")
