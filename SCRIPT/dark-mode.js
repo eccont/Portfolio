@@ -1,23 +1,16 @@
 let button = document.getElementById("chk");
 let changeImg = document.getElementById("mudar-foto");
 
-console.log(location.origin);
-console.log(changeImg.src);
-console.log(location.origin + changeImg.src);
-
 button.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
 
-  var img1 = "ASSETS/minha-carinha2.jpg";
-  var img2 = "ASSETS/erick-light.webp";
+  caminho = location.href.replace('index.html', 'ASSETS');
+  var img1 = caminho + "/Portfolio/minha-carinha2.jpg";
+  var img2 = caminho + "/Portfolio/erick-light.webp";  
 
-  console.log(location.origin + img1);
-  console.log(changeImg.src);
-
-  if (changeImg.src === location.origin + "/Portfolio/" + img1) {
-    console.log("caiu aqui");
+  if (changeImg.src === img1) {
     changeImg.setAttribute("src", img2);
-  } else if (changeImg.src === location.origin + "/Portfolio/" + img2) {
+  } else if (changeImg.src === img2) {
     changeImg.setAttribute("src", img1);
   }
 });
