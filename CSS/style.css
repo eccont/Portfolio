@@ -4,7 +4,7 @@ font-family: 'Gabarito', cursive;
 font-family: 'Lato', sans-serif;
 */
 
-:root{
+:root {
   --bg-color: #151515;
   --green: #13af42;
   --btn-primary: #13af42;
@@ -12,7 +12,7 @@ font-family: 'Lato', sans-serif;
   --text: #bababa;
 }
 
-.dark-mode{
+.dark-mode {
   --bg-color: #d3d3d3;
   --green: #13af42;
   --btn-primary: #13af42;
@@ -41,31 +41,33 @@ body {
 } */
 
 body::-webkit-scrollbar {
-  width: 15px;               /* width of the entire scrollbar */
+  width: 15px; /* width of the entire scrollbar */
 }
 
 body::-webkit-scrollbar-track {
-  background: var(--light-gray);        /* color of the tracking area */
+  background: var(--light-gray); /* color of the tracking area */
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--green);    /* color of the scroll thumb */
-  border-radius: 15px;       /* roundness of the scroll thumb */
-  border: 3px solid var(--light-gray);  /* creates padding around scroll thumb */
+  background-color: var(--green); /* color of the scroll thumb */
+  border-radius: 15px; /* roundness of the scroll thumb */
+  border: 3px solid var(--light-gray); /* creates padding around scroll thumb */
 }
-
 
 @media (max-width: 600px) {
   h1 {
     font-size: 3.7em !important;
   }
 
-  #about-me, #interesses, #formacao, #hard-skills, #contato {
+  #about-me,
+  #interesses,
+  #formacao,
+  #hard-skills,
+  #contato {
     margin: 5px 0px 5px 0px !important;
   }
 
-  .section-title 
-  {
+  .section-title {
     font-size: 5.5em !important;
     margin-bottom: 20px;
   }
@@ -79,45 +81,44 @@ body::-webkit-scrollbar-thumb {
     align-items: flex-start !important;
   }
 
-  .icons-hard-skills, .icons-interesses {
+  .icons-hard-skills,
+  .icons-interesses {
     margin-right: 13px !important;
     margin-top: 0px !important;
-    
   }
 }
 
 textarea::-webkit-scrollbar {
-  width: 10px;               /* width of the entire scrollbar */
+  width: 10px; /* width of the entire scrollbar */
 }
 
 textarea::-webkit-scrollbar-track {
-  background: var(--light-gray);        /* color of the tracking area */
+  background: var(--light-gray); /* color of the tracking area */
 }
 
 textarea::-webkit-scrollbar-thumb {
-  background-color: var(--green);    /* color of the scroll thumb */
-  border-radius: 15px;       /* roundness of the scroll thumb */
-  border: 3px solid var(--light-gray);  /* creates padding around scroll thumb */
+  background-color: var(--green); /* color of the scroll thumb */
+  border-radius: 15px; /* roundness of the scroll thumb */
+  border: 3px solid var(--light-gray); /* creates padding around scroll thumb */
 }
 
-
-
-h1{
-  font-family: 'Aleo', serif;
+h1 {
+  font-family: "Aleo", serif;
   font-weight: 900;
   font-size: 6em;
   color: var(--green);
 }
 
 h2 {
-  font-family: 'Gabarito', sans-serif;
+  font-family: "Gabarito", sans-serif;
   font-weight: 300;
   font-size: 2em;
   color: var(--text);
 }
 
-h3, legend {
-  font-family: 'Gabarito', sans-serif;
+h3,
+legend {
+  font-family: "Gabarito", sans-serif;
   font-size: 2em;
   font-weight: 600;
   color: var(--text);
@@ -126,18 +127,18 @@ h3, legend {
 }
 
 .section-title {
-  font-family: 'aleo', serif;
+  font-family: "aleo", serif;
   font-size: 7em;
   font-weight: 900;
   color: var(--light-gray);
 }
 
 p {
-  font-family: 'Gabarito', sans-serif;
+  font-family: "Gabarito", sans-serif;
   font-weight: 100;
   font-size: 1.5em;
   color: var(--text);
-  line-height: 1.5em ;
+  line-height: 1.5em;
   margin-top: 10px;
 }
 
@@ -146,12 +147,11 @@ a {
   position: relative;
 }
 
-#contato i{
+#contato i {
   display: inline-block;
   font-size: 2em;
   margin-right: 10px;
   color: var(--text);
-
 }
 
 #colunas {
@@ -181,13 +181,15 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
- 
+
   flex: 1;
 }
 
-.col-1, .col-2, .col-3 {
+.col-1,
+.col-2,
+.col-3 {
   margin: 10px;
-  padding: 20px
+  padding: 20px;
 }
 
 .img {
@@ -205,10 +207,13 @@ a {
   z-index: 1;
   margin-top: 20px;
   margin-left: 23px;
-
 }
 
-#about-me, #interesses, #formacao, #hard-skills, #contato {
+#about-me,
+#interesses,
+#formacao,
+#hard-skills,
+#contato {
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -217,7 +222,10 @@ a {
   margin-bottom: 50px;
 }
 
-#about-me h2, #interesses h2, #formacao h2, #hard-skills h2{
+#about-me h2,
+#interesses h2,
+#formacao h2,
+#hard-skills h2 {
   color: var(--text);
   margin-top: -25px;
   font-size: 3em;
@@ -226,9 +234,9 @@ a {
   display: inline;
 }
 
-#about-me p{
+#about-me p {
   margin-left: 5px;
-  line-height: 1.5em ;
+  line-height: 1.5em;
   margin-top: 10px;
 }
 
@@ -246,7 +254,7 @@ a {
   margin-top: 30px;
 }
 
-.item-formacao p{
+.item-formacao p {
   margin-top: 5px;
 }
 
@@ -299,7 +307,7 @@ a {
   color: green !important;
 }
 
-.item-contato:hover{
+.item-contato:hover {
   font-size: 1.1em;
   color: green;
   transition: 200ms;
@@ -309,7 +317,8 @@ a {
   margin-bottom: 30px;
 }
 
-input, textarea {
+input,
+textarea {
   resize: none;
   box-shadow: 0 0 0 0;
   border: 0 none;
@@ -321,11 +330,12 @@ input, textarea {
   border-radius: 5px;
   min-height: 20px;
   padding: 10px;
-  font-family: 'Gabarito', sans-serif;
+  font-family: "Gabarito", sans-serif;
   font-size: 1em;
 }
 
-input:focus, textarea:focus{
+input:focus,
+textarea:focus {
   resize: none;
   box-shadow: 0 0 0 0;
   border: 0 none;
@@ -343,7 +353,7 @@ input:focus, textarea:focus{
 }
 
 button {
-  font-family: 'Gabarito', sans-serif;
+  font-family: "Gabarito", sans-serif;
   font-size: 1em;
   color: var(--light-gray);
   background-color: var(--btn-primary);
@@ -357,7 +367,7 @@ button {
 button:hover {
   background-color: var(--text);
   transition: 200ms;
-  cursor: pointer;  
+  cursor: pointer;
 }
 
 button:focus {
@@ -367,8 +377,10 @@ button:focus {
   transition: 200ms;
 }
 
-
-#messageNome, #messageEmail, #messageRepeteEmail, #messageSubmit {
+#messageNome,
+#messageEmail,
+#messageRepeteEmail,
+#messageSubmit {
   font-size: 1em;
   color: red;
   font-weight: 100;
