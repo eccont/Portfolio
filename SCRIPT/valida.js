@@ -106,27 +106,19 @@ submit.addEventListener("click", function(event) {
 })
 
 function checkEmail() {
-  nome.addEventListener('keyup', () => {
-    if (email.value != repeteEmail.value) {
-      document.getElementById('messageRepeteEmail').setAttribute('style', 'display:block');
-      erroSubmitRepeteEmail = true
-      messageRepeteEmail.textContent = "Os e-mails não conferem";
-    }
-  })
-
   email.addEventListener('keyup', () => {
     if (email.value != repeteEmail.value) {
       document.getElementById('messageRepeteEmail').setAttribute('style', 'display:block');
       erroSubmitRepeteEmail = true
-      messageRepeteEmail.textContent = "Os e-mails não conferem";
+      messageRepeteEmail.textContent = "Os e-mails não conferem.";
     }
   })
 
-  repeteEmail.addEventListener('keyup', () => {
+  repeteEmail.addEventListener('focusin', () => {
     if (email.value != repeteEmail.value) {
       document.getElementById('messageRepeteEmail').setAttribute('style', 'display:block');
       erroSubmitRepeteEmail = true
-      messageRepeteEmail.textContent = "Os e-mails não conferem";
+      messageRepeteEmail.textContent = "Os e-mails não conferem.";
     }
   })
 }
