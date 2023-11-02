@@ -8,8 +8,8 @@ console.log(location.origin + changeImg.src);
 button.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
 
-  var img1 = "ASSETS/minha-carinha2.jpg";
-  var img2 = "ASSETS/erick-light.webp";
+  var img1 = "Portfolio/ASSETS/minha-carinha2.jpg";
+  var img2 = "Portfolio/ASSETS/erick-light.webp";
 
   console.log(img1);
 
