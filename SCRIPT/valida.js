@@ -7,7 +7,7 @@ let repeteEmail = document.getElementById("repete-e-mail");
 // ==================== VALIDA O NOME ========================
 const messageNome = document.querySelector('#messageNome');
 
-nome.addEventListener('focusout', async () => {
+nome.addEventListener('keyup', () => {
   console.log(nome.value)
   try {
     tamanhoNome = nome.value.length;
@@ -36,7 +36,7 @@ nome.addEventListener('focusout', async () => {
 // ==================== VALIDA O EMAIL ========================
 const messageEmail = document.querySelector('#messageEmail');
 
-email.addEventListener('key', async () => {
+email.addEventListener('keyup', async () => {
   console.log(email.value)
   try {
     const emailValido  = /\S+@\S+\.\S+/;
@@ -58,7 +58,7 @@ email.addEventListener('key', async () => {
 
   // ==================== CONFERE O EMAIL ========================
 
-  repeteEmail.addEventListener('focusout', async () => {
+  repeteEmail.addEventListener('keyup', () => {
   
     try {
       if (email.value != repeteEmail.value || repeteEmail.value.length == 0) {
