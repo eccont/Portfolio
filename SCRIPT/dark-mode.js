@@ -14,6 +14,7 @@ button.addEventListener("click", () => {
   console.log(img1);
 
   if (changeImg.src === location.origin + img1) {
+    console.log("caiu aqui")
     changeImg.setAttribute("src", img2);
   } else if (changeImg.src === location.origin + img2) {
     changeImg.setAttribute("src", img1);
