@@ -36,7 +36,7 @@ nome.addEventListener('focusout', async () => {
 // ==================== VALIDA O EMAIL ========================
 const messageEmail = document.querySelector('#messageEmail');
 
-email.addEventListener('focusout', async () => {
+email.addEventListener('key', async () => {
   console.log(email.value)
   try {
     const emailValido  = /\S+@\S+\.\S+/;
