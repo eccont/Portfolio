@@ -368,7 +368,7 @@ button:focus {
 }
 
 
-#messageNome, #messageEmail, #messageRepeteEmail {
+#messageNome, #messageEmail, #messageRepeteEmail, #messageSubmit {
   font-size: 1em;
   color: red;
   font-weight: 100;
