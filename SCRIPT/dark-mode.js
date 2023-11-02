@@ -14,10 +14,10 @@ button.addEventListener("click", () => {
   console.log(location.origin + img1);
   console.log(changeImg.src);
 
-  if (changeImg.src === location.origin + "/" + img1) {
+  if (changeImg.src === location.origin + "/Portfolio/" + img1) {
     console.log("caiu aqui");
     changeImg.setAttribute("src", img2);
-  } else if (changeImg.src === location.origin + "/" + img2) {
+  } else if (changeImg.src === location.origin + "/Portfolio/" + img2) {
     changeImg.setAttribute("src", img1);
   }
 });
