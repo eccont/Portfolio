@@ -10,14 +10,16 @@ font-family: 'Lato', sans-serif;
   --btn-primary: #13af42;
   --light-gray: #222222;
   --text: #bababa;
+  --opacity-var: 100%;
 }
 
 .dark-mode {
   --bg-color: #d3d3d3;
-  --green: #13af42;
-  --btn-primary: #13af42;
-  --light-gray: #c0c0c0;
+  --green: #109e3b;
+  --btn-primary: #0e8030;
+  --light-gray: #bcbcbc;
   --text: #515151;
+  --opacity-var: 70%;
 }
 
 body {
@@ -25,7 +27,7 @@ body {
   position: relative;
 }
 
-/*body::before {
+body::before {
   content: '';
   background-image: url("../assets/fundo-de-textura-papar-aquarela-branco-vertical-para-design-de-cartao-de-capa-ou-fundo-de-arte-de-pintura-aon-de-sobreposicao.jpg");
   background-repeat: repeat;
@@ -37,8 +39,8 @@ body {
   left: 0;
   bottom: 0;
   right: 0;
-  opacity: 100%;
-} */
+  opacity: var(--opacity-var);
+}
 
 body::-webkit-scrollbar {
   width: 15px; /* width of the entire scrollbar */
@@ -68,7 +70,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   .section-title {
-    font-size: 5.5em !important;
+    font-size: 5em !important;
     margin-bottom: 20px;
   }
 
@@ -188,7 +190,7 @@ a {
 .col-1,
 .col-2,
 .col-3 {
-  margin: 10px;
+  margin: 0px 10px;
   padding: 20px;
 }
 
@@ -202,24 +204,17 @@ a {
   position: relative;
 }
 
-.dark-mode-button {
-  position: absolute;
-  z-index: 1;
-  margin-top: 20px;
-  margin-left: 23px;
-}
-
 #about-me,
 #interesses,
 #formacao,
 #hard-skills,
 #contato {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 0px;
+  margin-bottom: 15px;
 }
 
 .nome {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 #about-me h2,
@@ -264,7 +259,7 @@ a {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 .icons-interesses {

@@ -76,3 +76,10 @@
 .fa-sun {
   color: #f39c12;
 }
+
+.dark-mode-button {
+  position: absolute;
+  z-index: 1;
+  margin-top: 20px;
+  margin-left: 23px;
+}
