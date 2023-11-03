@@ -29,7 +29,7 @@ body {
 
 body::before {
   content: '';
-  background-image: url("../assets/fundo-de-textura-papar-aquarela-branco-vertical-para-design-de-cartao-de-capa-ou-fundo-de-arte-de-pintura-aon-de-sobreposicao.jpg");
+  background-image: url("../ASSETS/fundo-de-textura-papar-aquarela-branco-vertical-para-design-de-cartao-de-capa-ou-fundo-de-arte-de-pintura-aon-de-sobreposicao.jpg");
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
