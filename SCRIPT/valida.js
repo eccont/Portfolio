@@ -137,6 +137,8 @@ function checkEmail() {
         .setAttribute("style", "display:block");
       erroSubmitRepeteEmail = true;
       messageRepeteEmail.textContent = "Os e-mails não conferem.";
+    } else {
+        erroSubmitRepeteEmail = false;
     }
   });
 
@@ -147,6 +149,8 @@ function checkEmail() {
         .setAttribute("style", "display:block");
       erroSubmitRepeteEmail = true;
       messageRepeteEmail.textContent = "Os e-mails não conferem.";
+    } else {
+       erroSubmitRepeteEmail = true;
     }
   });
 }
