@@ -150,7 +150,7 @@ function checkEmail() {
       erroSubmitRepeteEmail = true;
       messageRepeteEmail.textContent = "Os e-mails não conferem.";
     } else {
-       erroSubmitRepeteEmail = true;
+       erroSubmitRepeteEmail = false;
     }
   });
 }
