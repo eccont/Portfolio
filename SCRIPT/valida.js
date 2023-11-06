@@ -52,7 +52,7 @@ email.addEventListener("keyup", () => {
   checkEmail();
   try {
     const emailValido = /\S+@\S+\.\S+/;
-    if (!emailValido.test(email.value)) {
+    if (!emailValido.test(email.value) || email.value != repeteEmail.value) {
       document
         .getElementById("messageEmail")
         .setAttribute("style", "display:block");
@@ -129,7 +129,7 @@ submit.addEventListener("click", function (event) {
   }
 });
 
-function checkEmail() {
+/*function checkEmail() {
   email.addEventListener("keyup", () => {
     if (email.value != repeteEmail.value) {
       document
@@ -153,7 +153,7 @@ function checkEmail() {
        erroSubmitRepeteEmail = false;
     }
   });
-}
+}*/
 
 document.getElementById("repete-e-mail").addEventListener(
   "paste",
