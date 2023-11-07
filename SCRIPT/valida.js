@@ -12,7 +12,7 @@ var erroSubmitRepeteEmail = true;
 const messageNome = document.querySelector("#messageNome");
 
 nome.addEventListener("keyup", () => {
-  checkEmail();
+  
   try {
     tamanhoNome = nome.value.length;
     const onlyLetras = /^[a-zA-Z \W]*$/;
@@ -49,15 +49,23 @@ nome.addEventListener("keyup", () => {
 const messageEmail = document.querySelector("#messageEmail");
 
 email.addEventListener("keyup", () => {
-  checkEmail();
+  
   try {
     const emailValido = /\S+@\S+\.\S+/;
-    if (!emailValido.test(email.value) || email.value != repeteEmail.value) {
+    if (!emailValido.test(email.value)) {
       document
         .getElementById("messageEmail")
         .setAttribute("style", "display:block");
       erroSubmitEmail = true;
       throw { email_error: "Digite um e-mail válido" };
+    }
+    
+    if (email.value != repeteEmail.value){
+      document
+        .getElementById("messageRepeteEmail")
+        .setAttribute("style", "display:block");
+      erroSubmitRepeteEmail = true;
+      throw { repeteEmail_error: "Os e-mails não conferem." };
     }
 
     if (emailValido.test(email.value) == true) {
@@ -76,7 +84,7 @@ email.addEventListener("keyup", () => {
 // ==================== CONFERE O EMAIL ========================
 
 repeteEmail.addEventListener("keyup", () => {
-  checkEmail();
+  
   try {
     if (
       email.value != repeteEmail.value ||
