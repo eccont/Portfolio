@@ -49,7 +49,7 @@ nome.addEventListener("keyup", () => {
 const messageEmail = document.querySelector("#messageEmail");
 
 email.addEventListener("keyup", () => {
-  
+  checkEmail()
   try {
     const emailValido = /\S+@\S+\.\S+/;
     if (!emailValido.test(email.value)) {
@@ -58,14 +58,6 @@ email.addEventListener("keyup", () => {
         .setAttribute("style", "display:block");
       erroSubmitEmail = true;
       throw { email_error: "Digite um e-mail válido" };
-    }
-    
-    if (email.value != repeteEmail.value){
-      document
-        .getElementById("messageRepeteEmail")
-        .setAttribute("style", "display:block");
-      erroSubmitRepeteEmail = true;
-      throw { repeteEmail_error: "Os e-mails não conferem." };
     }
 
     if (emailValido.test(email.value) == true) {
@@ -84,7 +76,7 @@ email.addEventListener("keyup", () => {
 // ==================== CONFERE O EMAIL ========================
 
 repeteEmail.addEventListener("keyup", () => {
-  
+  checkEmail()
   try {
     if (
       email.value != repeteEmail.value ||
@@ -137,31 +129,31 @@ submit.addEventListener("click", function (event) {
   }
 });
 
-/*function checkEmail() {
+function checkEmail() {
   email.addEventListener("keyup", () => {
     if (email.value != repeteEmail.value) {
       document
         .getElementById("messageRepeteEmail")
         .setAttribute("style", "display:block");
       erroSubmitRepeteEmail = true;
-      messageRepeteEmail.textContent = "Os e-mails não conferem.";
+      messageRepeteEmail.textContent = "Os e-mails não conferem. func1";
     } else {
         erroSubmitRepeteEmail = false;
     }
   });
 
-  repeteEmail.addEventListener("focusin", () => {
+  repeteEmail.addEventListener("keyup", () => {
     if (email.value != repeteEmail.value) {
       document
         .getElementById("messageRepeteEmail")
         .setAttribute("style", "display:block");
       erroSubmitRepeteEmail = true;
-      messageRepeteEmail.textContent = "Os e-mails não conferem.";
+      messageRepeteEmail.textContent = "Os e-mails não conferem.func2";
     } else {
        erroSubmitRepeteEmail = false;
     }
   });
-}*/
+}
 
 document.getElementById("repete-e-mail").addEventListener(
   "paste",
